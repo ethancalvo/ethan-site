@@ -13,9 +13,9 @@ HTML should be pretty standard html5. Nothing special. BUT just so I can process
 Build tools should include the following:
 
 - [Rollupjs](https://rollupjs.org)
-- postCSS
-- autoprefixer
-- 11ty
+- [postCSS](https://postcss.org)
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer)
+- [11ty](https://www.11ty.dev)
 
 ## DEV automation
 
