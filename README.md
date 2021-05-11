@@ -1,5 +1,7 @@
 # ethan-site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b66da651-b52f-4970-a120-ae45dfeb1eb1/deploy-status)](https://app.netlify.com/sites/ethan-site/deploys)
+
 Here is my about-me site
 
 ## Build Process
