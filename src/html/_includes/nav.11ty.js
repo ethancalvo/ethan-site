@@ -1,3 +1,4 @@
+module.exports = `
 <nav class="nav">
   <a href="#">Home</a>
-</nav>
+</nav>`;
