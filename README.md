@@ -19,6 +19,12 @@ Build tools should include the following:
 - [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [11ty](https://www.11ty.dev)
 
+## TDD and all that
+
+Since I love automation, and tests are automatable. I went ahead and over-engineered this thing so the build process includes testable 11ty bits and pieces. Which is cool, I guess.
+
+Using Jest.
+
 ## DEV automation
 
 ```bash
