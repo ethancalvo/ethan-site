@@ -7,7 +7,7 @@ module.exports = function (navData) {
   }
 
   return `
-<nav class="nav">
+<nav class="l-nav">
   ${navArray.join("")}
 </nav>`;
 };

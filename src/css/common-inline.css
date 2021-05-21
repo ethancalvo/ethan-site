@@ -16,14 +16,14 @@ html {
   padding: 0;
 }
 
-.nav {
+.l-nav {
   min-height: 2rem;
 }
 
-.content {
+.l-content {
   min-height: calc(100% - 4rem);
 }
 
-.footer {
+.l-footer {
   min-height: 2rem;
 }

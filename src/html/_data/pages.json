@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "/",
+    "title": "Ethan Site",
+    "content": "<h1>Here is some content</h1><p>Check it out</p>",
+    "seo": {
+      "description": "home page",
+      "title": "SEO title"
+    }
+  }
+]

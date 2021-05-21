@@ -1,0 +1,12 @@
+.l-announcements {
+  display: none;
+}
+.l-announcements.active {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: aqua;
+  color: #000;
+}
