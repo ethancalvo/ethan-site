@@ -19,21 +19,9 @@ class Page {
 
   render(data) {
     let minCSS = "";
-    let layoutCSSArray = [
-      "common-inline",
-      "nav",
-      "content",
-      "announcements",
-      "footer",
-    ];
+
     if ("cssMin" in this) {
-      let commonCSS = layoutCSSArray.map((fn) => {
-        return fs.readFileSync(
-          path.resolve(__dirname, `../css/${fn}.css`),
-          "utf8"
-        );
-      });
-      minCSS = this.cssMin(commonCSS.join(" "));
+      minCSS = this.cssMin(data.commonCSS.join(" "));
     }
 
     let navMenu = "";
