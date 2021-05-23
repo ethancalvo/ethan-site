@@ -8,6 +8,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./public/js/");
 
+  eleventyConfig.addWatchTarget("./src/css");
+
   eleventyConfig.setBrowserSyncConfig({
     notify: false,
     files:['./public/js'],
