@@ -1,7 +1,8 @@
 const nav = require("./_includes/nav.11ty.js");
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 const seo = require("./_includes/seo.11ty");
+const scripts = require("./_includes/scripts.11ty");
 
 class Page {
   data() {
@@ -62,7 +63,7 @@ class Page {
 
     <div class="l-footer">Footer</div>
   </body>
-  <script async src="/js/main.js" type="module"></script>
+  ${scripts(data.dataPage.scripts)}
 </html>`;
   }
 }
