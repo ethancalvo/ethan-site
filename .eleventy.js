@@ -10,7 +10,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setBrowserSyncConfig({
     notify: false,
-    files:['./public/js']
+    files:['./public/js'],
+    browser: "Microsoft Edge",
+    open:"local"
   });
 
   return {
