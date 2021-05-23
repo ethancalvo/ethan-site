@@ -1,6 +1,4 @@
 const nav = require("./_includes/nav.11ty.js");
-// const fs = require("fs");
-// const path = require("path");
 const seo = require("./_includes/seo.11ty");
 const scripts = require("./_includes/scripts.11ty");
 
