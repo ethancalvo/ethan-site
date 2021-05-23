@@ -17,6 +17,8 @@ class Page {
   }
 
   render(data) {
+    let googleFontsUrl =
+      "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&display=swap";
     let minCSS = "";
 
     if ("cssMin" in this) {
@@ -48,6 +50,11 @@ class Page {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     ${seoTags}
     <title>${data.dataPage.title}</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/> 
+    <link rel="preload" as="style" href="${googleFontsUrl}"/>
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="${googleFontsUrl}" rel="stylesheet"/>
+    
     <style type="text/css">${minCSS}</style>
   </head>
   <body>
