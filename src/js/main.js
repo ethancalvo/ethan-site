@@ -1,5 +1,6 @@
-import { BodyGreet } from "./body-greet/BodyGreet";
+//import { BodyGreet } from "./body-greet/BodyGreet";
+import contactFormCSS from "../css/contact-form.css";
 
 (function () {
-  BodyGreet(document.querySelector(".announcements"));
+  //BodyGreet(document.querySelector(".announcements"));
 })();
