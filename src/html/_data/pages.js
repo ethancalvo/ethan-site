@@ -3,7 +3,7 @@ module.exports = function () {
     {
       slug: "/",
       title: "Ethan Site",
-      content: `<h1>Ethan Calvert -h</h1>
+      content: `<h1>Ethan Calvert</h1>
       <p>Hey, you found my professional site. Thanks for checking it out. If you have questions, hit the form below.</p>
       <form class="m-contact-form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="m-form-card">
