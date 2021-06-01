@@ -28,6 +28,9 @@
   font-size: 1rem;
   padding: 0.25rem;
 }
+.m-form-card_input:invalid:required {
+  border-color: red;
+}
 
 .m-form-card_submit-button {
   margin: 1rem 0;

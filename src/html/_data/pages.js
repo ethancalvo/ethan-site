@@ -8,10 +8,10 @@ module.exports = function () {
       <form class="m-contact-form" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
         <div class="m-form-card">
           <label for="name" class="m-form-card_label">Email:</label>
-          <input class="m-form-card_input" type="text" id="name" name="name" />        
+          <input class="m-form-card_input" type="email" required id="email" name="email" />        
         
           <label for="message" class="m-form-card_label">Message:</label>
-          <textarea class="m-form-card_input" id="message" name="message"></textarea>
+          <textarea class="m-form-card_input" id="message" required name="message"></textarea>
         
         <div data-netlify-recaptcha="true"></div>
         
