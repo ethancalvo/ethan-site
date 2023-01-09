@@ -10,8 +10,10 @@
     "serve:html": "npx @11ty/eleventy --serve --port 4444 --watch",
     "watch:js": "rollup --config rollup.config.js --watch",
     "dev-build": "npm run compile:html; npm run watch:js & npm run serve:html",
-    "build": "npx @11ty/eleventy; npm run compile:js",
-    "view-build": "npm run build; http-server public -p 4444"
+    "build": "npx @11ty/eleventy;",
+    "view-build": "npm run build; http-server public -p 4444",
+    "deploy": "npm run build; netlify deploy public",
+    "deploy-prod": "npm run build; netlify deploy publich --prod"
   },
   "repository": {
     "type": "git",

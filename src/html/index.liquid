@@ -1,0 +1,10 @@
+---
+layout: default
+title: EthanCalvert.dev
+description: I am currently happily employed as the Director of IT at Logic of English
+---
+
+{% assign lastJob = collections.job | last %}
+{{lastJob.templateContent}}
+
+{% include 'contactForm.liquid' %}

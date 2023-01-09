@@ -1,9 +1,9 @@
-import terser from "@rollup/plugin-terser";
+import { terser } from "@rollup/plugin-terser";
 import postcss from "rollup-plugin-postcss";
 import autoprefixer from "autoprefixer";
 export default [
   {
-    input: "src/js/main.js",
+    input: "src/js/main.mjs",
     output: {
       file: "public/js/main.js",
       format: "es",

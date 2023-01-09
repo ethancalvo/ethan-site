@@ -1,0 +1,25 @@
+.top {
+  background-color: #ccc;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+.l-nav {
+  min-height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.l-nav > a:first-child {
+  text-decoration: none;
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+}

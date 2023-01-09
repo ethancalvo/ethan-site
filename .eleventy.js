@@ -1,14 +1,11 @@
-const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addFilter("cssMin", function(code) {
-    let output = new CleanCSS({}).minify(code);
-    return output.styles;
-  });
+  
+  // eleventyConfig.addPassthroughCopy("src/js/");
+  // eleventyConfig.addWatchTarget("./src/js/");
 
-  eleventyConfig.addWatchTarget("./public/js/");
-
-  eleventyConfig.addWatchTarget("./src/css");
+  eleventyConfig.addPassthroughCopy({"src/styles/":"styles/"});
+  eleventyConfig.addWatchTarget("./src/styles/");
 
   eleventyConfig.setBrowserSyncConfig({
     notify: false,
@@ -21,6 +18,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: "src/html",
       output: "public",
+      layouts: "_layouts"
     },
   };
 };
