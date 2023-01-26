@@ -2,10 +2,12 @@
 layout: default
 title: EthanCalvert.dev
 description: I am currently happily employed as the Director of IT at Logic of English
+styles:
+  - home.css
 ---
 
-{% assign lastJob = collections.job | last %}
-{{lastJob.templateContent}}
+{% assign lastJob = collections.job | first %}
+<h2>Currently: {{lastJob.data.jobTitle}} | {{lastJob.data.company}}</h2>
 
 <p>I love thinking about systems. Figuring out how a process should work, applying required technology to it, building the tech stack to be maintainable is beautiful to me.</p>
 <p>See the rest of my work history on the <a href="/jobs">jobs page</a>.</p>

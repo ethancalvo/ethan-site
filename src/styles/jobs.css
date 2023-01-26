@@ -1,0 +1,20 @@
+h2 {
+  font-size: 2rem;
+}
+
+h3.job-title {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+ul.job-list .job-dates {
+  font-style: italic;
+}
+ul.job-list > li {
+  padding: 1rem 0;
+  list-style: none;
+}
+ul.job-list ul {
+  margin: 0 0 0 1rem;
+}
