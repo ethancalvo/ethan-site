@@ -1,18 +1,15 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const DateToLocal_1 = require("../_11tyCommon/DateToLocal");
 class Jobs {
+    constructor() {
+        this.dateToLocal = DateToLocal_1.dateToLocal;
+    }
     data() {
         return {
             layout: "default",
             styles: ["jobs.css"],
         };
-    }
-    dateToLocal(dt) {
-        let nd = new Date(dt.valueOf());
-        nd.setDate(nd.getDate() + 1);
-        return nd.toLocaleDateString("en-us", {
-            year: "numeric",
-            month: "short",
-        });
     }
     render(data) {
         let THIS = this;
@@ -28,9 +25,9 @@ class Jobs {
                 endDate = THIS.dateToLocal(job.end);
             }
             return `<li class="job">
-        <h3 class="job-title">${job.jobTitle} | ${job.company}</h3>
-        <div class="job-dates">${THIS.dateToLocal(job.start)} TO ${endDate}</div>
-        <div class="job-summary">${jbData.templateContent}</div>
+        <a class="job-title" href="${jbData.url}">${job.jobTitle} | ${job.company}</a>
+        <div class="job-dates">${THIS.dateToLocal(job.start)} to ${endDate}</div>
+        <div class="summary">${job.summary}</div>
         </li>`;
         });
         return `<h2>Jobs</h2>

@@ -30,6 +30,7 @@
   </head>
   <body>
     {% include 'nav.liquid' %}
+    {% if backLink %}<div class="back-nav"><a href="{{backLink.url}}">{{backLink.text}}</a></div>{% endif %}
     <div class="l-content">
       
         {{content}}

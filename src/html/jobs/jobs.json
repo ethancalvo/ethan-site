@@ -1,6 +1,10 @@
 {
   "tags": "job",
-  "layout": "../_layouts/job.liquid",
+  "layout": "../_layouts/job",
   "permalink": "/jobs/{{ page.fileSlug | slugify }}.html",
-  "styles": ["jobs.css"]
+  "styles": ["jobs.css"],
+  "backLink": {
+    "url": "/jobs",
+    "text": "< Jobs"
+  }
 }

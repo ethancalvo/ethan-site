@@ -4,11 +4,16 @@ interface job {
   date: Date;
   start: Date;
   end: Date | null;
+  summary: string;
+  responsibilities: string[];
 }
 interface jobCollectionObject {
   data: job;
+  url: string;
   templateContent: string;
 }
+
+import { dateToLocal } from "../_11tyCommon/DateToLocal";
 
 class Jobs {
   data(): object {
@@ -17,15 +22,7 @@ class Jobs {
       styles: ["jobs.css"],
     };
   }
-
-  dateToLocal(dt: Date): string {
-    let nd = new Date(dt.valueOf());
-    nd.setDate(nd.getDate() + 1);
-    return nd.toLocaleDateString("en-us", {
-      year: "numeric",
-      month: "short",
-    });
-  }
+  dateToLocal = dateToLocal;
 
   render(data: any): string {
     let THIS = this;
@@ -44,11 +41,13 @@ class Jobs {
           endDate = THIS.dateToLocal(job.end);
         }
         return `<li class="job">
-        <h3 class="job-title">${job.jobTitle} | ${job.company}</h3>
+        <a class="job-title" href="${jbData.url}">${job.jobTitle} | ${
+          job.company
+        }</a>
         <div class="job-dates">${THIS.dateToLocal(
           job.start
-        )} TO ${endDate}</div>
-        <div class="job-summary">${jbData.templateContent}</div>
+        )} to ${endDate}</div>
+        <div class="summary">${job.summary}</div>
         </li>`;
       }
     );

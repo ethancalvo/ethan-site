@@ -2,19 +2,38 @@ h2 {
   font-size: 2rem;
 }
 
-h3.job-title {
+h3.job-title,
+a.job-title {
   color: #333;
   font-size: 1.2rem;
   font-family: "Bebas Neue", sans-serif;
 }
 
-ul.job-list .job-dates {
+a.job-title {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.job-dates {
   font-style: italic;
 }
+
 ul.job-list > li {
   padding: 1rem 0;
   list-style: none;
 }
-ul.job-list ul {
+
+ul.job-list > li > .summary {
+  margin: 0;
+  padding: 0.5rem 0 0 0;
+}
+
+section.summary,
+section.responsibilities {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+section.responsibilities ul {
   margin: 0 0 0 1rem;
 }
