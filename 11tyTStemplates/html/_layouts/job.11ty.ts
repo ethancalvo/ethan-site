@@ -18,12 +18,18 @@ class Job {
       })
       .join("");
 
+    let musings = "";
+    if (page.content) {
+      musings = `<section class="musings">${page.content}</section>`;
+    }
+
     return `<h2>${page.jobTitle}</h2>
         <div class="job-dates">${dateToLocal(page.start)} to ${endDate}</div>
         <section class="summary">${page.summary}</section>
         <section class="responsibilities">
             <ul>${resps}</ul>
         </section>
+        ${musings}
     `;
   }
 }

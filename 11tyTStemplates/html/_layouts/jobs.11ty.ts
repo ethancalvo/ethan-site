@@ -13,7 +13,7 @@ interface jobCollectionObject {
   templateContent: string;
 }
 
-import { dateToLocal } from "../_11tyCommon/DateToLocal";
+import { dateToLocal } from "../../_11tyCommon/DateToLocal";
 
 class Jobs {
   data(): object {
