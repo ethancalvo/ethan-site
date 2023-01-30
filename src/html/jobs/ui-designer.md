@@ -15,3 +15,13 @@ responsibilities:
   - Conducting accessibility testing
   - Conducting and presenting results of usability studies to product managers and dev team
 ---
+
+The Data Collection group of products within the SPSS portfolio was a lesser know suite; however, it was right up my alley. I had worked with web survey software, analyzed results in SPSS, and had some ideas about how it all should work.
+
+The introduction to how software is written and maintained in a tech company was eye-opening. This dispelled any notion I had that the AF was the most bureaucratic agency on earth. Global companies are much more so - for good reason.
+
+It was at SPSS that I learned to write clearly, have NUMEROUS alternatives, show my work, build prototypes, present in real-time, chase-down approvals (managing up they call it now-a-days), and coordinate it all with teams in China, Australia, New Zealand, England, and the US midwest. We were working asynchronously for years before it became a thing during the COVID days.
+
+Sometimes it was frustrating, but mostly it was fun. I worked with great people who were very patient with me.
+
+I breathed XML, XSLT, HTML, CSS, and JavaScript during this time. Json wasn't really a big thing yet, but hitting SOAP endpoints was my jam. I loved building prototypes that didn't just show an animated interface - it was working code that helped me demonstrate exactly what I wanted to the real developers. No hand-waving here.

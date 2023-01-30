@@ -1,17 +1,4 @@
-interface job {
-  company: string;
-  jobTitle: string;
-  date: Date;
-  start: Date;
-  end: Date | null;
-  summary: string;
-  responsibilities: string[];
-}
-interface jobCollectionObject {
-  data: job;
-  url: string;
-  templateContent: string;
-}
+import { Job, JobCollectionObject } from "./EtSiteTypes";
 
 import { dateToLocal } from "../../_11tyCommon/DateToLocal";
 
@@ -27,15 +14,15 @@ class Jobs {
   render(data: any): string {
     let THIS = this;
     data.collections.job.sort(
-      (a: jobCollectionObject, b: jobCollectionObject) => {
-        let jobA: job = a.data;
-        let jobB: job = b.data;
+      (a: JobCollectionObject, b: JobCollectionObject) => {
+        let jobA: Job = a.data;
+        let jobB: Job = b.data;
         return jobB.start.valueOf() - jobA.start.valueOf();
       }
     );
     let liMap = data.collections.job.map(
-      (jbData: jobCollectionObject, idx: number): string => {
-        let job: job = jbData.data;
+      (jbData: JobCollectionObject, idx: number): string => {
+        let job: Job = jbData.data;
         let endDate: string = "Present";
         if (job.end) {
           endDate = THIS.dateToLocal(job.end);

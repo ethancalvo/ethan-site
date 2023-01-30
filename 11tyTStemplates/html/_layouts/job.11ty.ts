@@ -1,4 +1,6 @@
 import { dateToLocal } from "../../_11tyCommon/DateToLocal";
+import { Job as iJob } from "./EtSiteTypes";
+
 class Job {
   data(): object {
     return {
@@ -7,27 +9,27 @@ class Job {
     };
   }
 
-  render(page: any): string {
+  render(jb: iJob): string {
     let endDate: string = "Present";
-    if (page.end) {
-      endDate = dateToLocal(page.end);
+    if (jb.end) {
+      endDate = dateToLocal(jb.end);
     }
-    let resps: string = page.responsibilities
-      .map((resp: string) => {
-        return `<li>${resp}</li>`;
+    let responseString: string = jb.responsibilities
+      .map((r: string) => {
+        return `<li>${r}</li>`;
       })
       .join("");
 
     let musings = "";
-    if (page.content) {
-      musings = `<section class="musings">${page.content}</section>`;
+    if (jb.content) {
+      musings = `<section class="musings">${jb.content}</section>`;
     }
 
-    return `<h2>${page.jobTitle}</h2>
-        <div class="job-dates">${dateToLocal(page.start)} to ${endDate}</div>
-        <section class="summary">${page.summary}</section>
+    return `<h2>${jb.jobTitle}</h2>
+        <div class="job-dates">${dateToLocal(jb.start)} to ${endDate}</div>
+        <section class="summary">${jb.summary}</section>
         <section class="responsibilities">
-            <ul>${resps}</ul>
+            <ul>${responseString}</ul>
         </section>
         ${musings}
     `;

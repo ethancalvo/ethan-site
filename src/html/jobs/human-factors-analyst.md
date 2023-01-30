@@ -12,3 +12,6 @@ responsibilities:
   - Advising testers on HF methods and analysis concerns as required
   - Helping to conduct HF tests as required
 ---
+
+I was advised not to take this job, but I did it anyway for personal reasons. Within a year, this position was cut and I needed to find a new job.
+That being said, I wouldn't do it any differently. The tests I got to take part in were fascinating, and the team of PhDs I got to work with was amazing. I loved being around them. Everything became a potential study. It was lovely being the most junior in a group of like-minded professionals.
