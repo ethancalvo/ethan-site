@@ -18,7 +18,9 @@
 
 .l-nav > a:first-child {
   text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: var(--dec-font);
+  text-transform: uppercase;
+  font-stretch: 80%;
   color: var(--main-color);
   font-weight: 600;
   font-size: 1.2rem;

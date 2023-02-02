@@ -2,6 +2,7 @@
   --main-color: #034199;
   --text-color: #555;
   --bold-color: #000;
+  --dec-font: "Open Sans", sans-serif;
 }
 body,
 html {
@@ -14,7 +15,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: sans-serif;
 }
 
 h1,
@@ -23,7 +24,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bebas Neue", sans-serif;
+  /*font-family: "Bebas Neue", sans-serif;*/
+  font-family: var(--dec-font);
+  font-weight: 500;
+  font-stretch: 75%;
+  color: var(--bold-color);
+  text-transform: uppercase;
 }
 
 body {

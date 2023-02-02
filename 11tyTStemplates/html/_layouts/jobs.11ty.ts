@@ -28,9 +28,8 @@ class Jobs {
           endDate = THIS.dateToLocal(job.end);
         }
         return `<li class="job">
-        <a class="job-title" href="${jbData.url}">${job.jobTitle} | ${
-          job.company
-        }</a>
+        <a class="job-title" href="${jbData.url}">${job.jobTitle}</a>
+        <div class="company">${job.company}</div>
         <div class="job-dates">${THIS.dateToLocal(
           job.start
         )} to ${endDate}</div>

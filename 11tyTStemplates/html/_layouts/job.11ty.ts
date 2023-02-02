@@ -26,6 +26,7 @@ class Job {
     }
 
     return `<h2>${jb.jobTitle}</h2>
+        <div class="company">${jb.company}</div>
         <div class="job-dates">${dateToLocal(jb.start)} to ${endDate}</div>
         <section class="summary">${jb.summary}</section>
         <section class="responsibilities">

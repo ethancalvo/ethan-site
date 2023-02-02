@@ -6,12 +6,24 @@ h3.job-title,
 a.job-title {
   color: #333;
   font-size: 1.2rem;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: var(--dec-font);
+  font-weight: 600;
+  font-stretch: 90%;
+  text-transform: uppercase;
+  margin-left: 0;
 }
 
 a.job-title {
   text-decoration: none;
   color: var(--main-color);
+}
+
+.company {
+  font-family: var(--dec-font);
+  color: var(--bold-color);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-stretch: 75%;
 }
 
 .job-dates {
