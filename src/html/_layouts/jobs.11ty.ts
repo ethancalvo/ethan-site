@@ -37,7 +37,7 @@ class Jobs {
         </li>`;
       }
     );
-    return `<h2>Jobs</h2>
+    return `<h2>Work History</h2>
     <ul class="job-list">
       ${liMap.join("")}
     </ul>

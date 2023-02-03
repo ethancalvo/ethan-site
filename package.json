@@ -7,14 +7,13 @@
     "test": "jest",
     "compile:html": "npx @11ty/eleventy",
     "compile:js": "rollup --config rollup.config.js; ",
-    "serve:html": "npx @11ty/eleventy --serve --port 4444 --watch",
     "watch:js": "rollup --config rollup.config.js --watch",
     "watch:ts": "tsc --watch",
-    "dev-build": "npm run compile:html; npm run watch:ts & npm run serve:html",
-    "build": "tsc --project tsconfig.json; npx @11ty/eleventy;",
-    "view-build": "npm run build; http-server public -p 4444",
+    "dev-build": "node --require esbuild-register node_modules/.bin/eleventy --serve",
+    "build": "node --require esbuild-register node_modules/.bin/eleventy",
+    "view-build": "npx @11ty/eleventy-dev-server --dir=public",
     "deploy": "npm run build; netlify deploy public",
-    "deploy-prod": "npm run build; netlify deploy publich --prod"
+    "deploy-prod": "npm run build; netlify deploy public --prod"
   },
   "repository": {
     "type": "git",
@@ -27,11 +26,16 @@
   },
   "homepage": "https://github.com/ethancalvo/ethan-site#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
     "@rollup/plugin-terser": "^0.3.0",
+    "@types/node": "^18.11.18",
     "autoprefixer": "^10.4.13",
     "clean-css": "^5.3.1",
+    "esbuild": "^0.17.5",
+    "esbuild-register": "^3.4.2",
     "rollup": "^3.9.1",
     "rollup-plugin-postcss": "^4.0.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.0-beta.3"
   }
 }
