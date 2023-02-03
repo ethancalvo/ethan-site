@@ -4,7 +4,7 @@
   "permalink": "/jobs/{{ page.fileSlug | slugify }}.html",
   "styles": ["jobs.css"],
   "backLink": {
-    "url": "/jobs",
-    "text": "< Jobs"
+    "url": "/work-history",
+    "text": "< Work History"
   }
 }
