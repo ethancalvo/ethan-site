@@ -13,3 +13,15 @@ export interface JobCollectionObject {
   url: string;
   templateContent: string;
 }
+
+export interface Post {
+  title: string;
+  summary: string;
+  content: string;
+}
+
+export interface PostCollectionObject {
+  data: Post;
+  url: string;
+  templateContent: string;
+}

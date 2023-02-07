@@ -1,0 +1,10 @@
+{
+  "tags": "post",
+  "layout": "../_layouts/post",
+  "permalink": "/posts/{{ page.fileSlug | slugify }}.html",
+  "styles": ["posts.css"],
+  "backLink": {
+    "url": "/posts",
+    "text": "< Posts"
+  }
+}
