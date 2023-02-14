@@ -11,11 +11,28 @@ a.job-title {
   font-stretch: 90%;
   text-transform: uppercase;
   margin-left: 0;
-  transition: 0.5s ease-in-out font-stretch;
+  transition: font-stretch 0.5s ease-in-out;
+  position: relative;
 }
 .job:hover > h3.job-title,
 .job:hover > a.job-title {
   font-stretch: 100%;
+}
+a.job-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transform: translate(0, 0);
+  background-color: var(--main-color);
+  transition: transform 0.5s ease-in-out, width 0.7s ease-in-out;
+}
+
+.job:hover > a.job-title::after {
+  transform: translate(5%, 0);
+  width: 90%;
 }
 
 .job:hover > .company {
