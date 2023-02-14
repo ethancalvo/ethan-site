@@ -11,6 +11,19 @@ a.job-title {
   font-stretch: 90%;
   text-transform: uppercase;
   margin-left: 0;
+  transition: 0.5s ease-in-out font-stretch;
+}
+.job:hover > h3.job-title,
+.job:hover > a.job-title {
+  font-stretch: 100%;
+}
+
+.job:hover > .company {
+  font-stretch: 90%;
+}
+.job:hover > .job-dates,
+.job:hover > .summary {
+  color: var(--bold-color);
 }
 
 a.job-title {
@@ -24,6 +37,7 @@ a.job-title {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   font-stretch: 75%;
+  transition: 0.2s ease-in-out font-stretch;
 }
 
 .job-dates {
