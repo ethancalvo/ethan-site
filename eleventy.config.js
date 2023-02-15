@@ -5,8 +5,11 @@ module.exports = function (eleventyConfig) {
 
   // eleventyConfig.addPassthroughCopy("src/js/");
   // eleventyConfig.addWatchTarget("./src/js/");
-
-  eleventyConfig.addPassthroughCopy({ "src/styles/": "styles/" });
+  eleventyConfig.addPassthroughCopy({
+    "src/html/E.svg": "E.svg",
+    "src/html/E.png": "E.png",
+    "src/styles/": "styles/",
+  });
   eleventyConfig.addWatchTarget("./src/styles/");
 
   eleventyConfig.setServerOptions({
