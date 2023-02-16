@@ -23,7 +23,7 @@ class Posts {
     let liMap = data.collections.post.map(
       (postData: PostCollectionObject, idx: number): string => {
         let post: Post = postData.data;
-        return `<li class="post">
+        return `<li class="post fancy">
         <a class="post-title" href="${postData.url}">${post.title}</a>
         
         <div class="summary">${post.summary}</div>

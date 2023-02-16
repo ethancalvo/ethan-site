@@ -11,20 +11,12 @@ ul.post-list > li {
   list-style: none;
 }
 
-h3.post-title,
-a.post-title {
-  color: #333;
-  font-size: 1.2rem;
-  font-family: var(--dec-font);
-  font-weight: 600;
-  font-stretch: 90%;
-  text-transform: uppercase;
-  margin-left: 0;
-}
-
 a.post-title {
   text-decoration: none;
   color: var(--main-color);
+}
+.summary {
+  margin-top: 0.25rem;
 }
 
 blockquote {

@@ -6,4 +6,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+}
+.l-content p {
+  margin: 0.5rem 0;
 }

@@ -2,8 +2,7 @@ h2 {
   font-size: 2rem;
 }
 
-h3.job-title,
-a.job-title {
+h3.job-title {
   color: #333;
   font-size: 1.2rem;
   font-family: var(--dec-font);
@@ -11,33 +10,9 @@ a.job-title {
   font-stretch: 90%;
   text-transform: uppercase;
   margin-left: 0;
-  transition: font-stretch 0.5s ease-in-out;
   position: relative;
 }
-.job:hover > h3.job-title,
-.job:hover > a.job-title {
-  font-stretch: 100%;
-}
-a.job-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  transform: translate(0, 0);
-  background-color: var(--main-color);
-  transition: transform 0.5s ease-in-out, width 0.7s ease-in-out;
-}
 
-.job:hover > a.job-title::after {
-  transform: translate(5%, 0);
-  width: 90%;
-}
-
-.job:hover > .company {
-  font-stretch: 90%;
-}
 .job:hover > .job-dates,
 .job:hover > .summary {
   color: var(--bold-color);
@@ -49,12 +24,6 @@ a.job-title {
 }
 
 .company {
-  font-family: var(--dec-font);
-  color: var(--bold-color);
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  font-stretch: 75%;
-  transition: 0.2s ease-in-out font-stretch;
 }
 
 .job-dates {
